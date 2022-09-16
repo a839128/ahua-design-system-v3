@@ -45,6 +45,7 @@
         "@teambit/harmony": "0.3.3",
         "@testing-library/react": "12.1.5",
         "@testing-library/react-hooks": "8.0.1",
+        "@types/react-dom": "18.0.6",
         "@types/react-native": "0.66.9",
         "@typescript-eslint/eslint-plugin": "4.29.3",
         "eslint-import-resolver-node": "0.3.6",
@@ -54,15 +55,15 @@
         "eslint-plugin-mdx": "1.15.0",
         "eslint-plugin-react": "7.25.1",
         "lodash.sample": "4.2.1",
+        "react": "18.2.0",
         "react-collapsible": "2.10.0",
+        "react-dom": "18.2.0",
+        "react-native": "0.70.1",
         "react-native-collapsible": "1.6.0"
       },
       "peerDependencies": {
         "@testing-library/react-native": "9.0.0",
         "babel-jest": "27.4.5",
-        "react": "17.0.2",
-        "react-dom": "17.0.2",
-        "react-native": "0.66.4",
         "react-test-renderer": "17.0.2"
       }
     }

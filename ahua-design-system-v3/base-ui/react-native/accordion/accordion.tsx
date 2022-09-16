@@ -57,7 +57,11 @@ export function Accordion({ elementList }: AccordionProps) {
         }}
         onPress={toggleOpen}
       >
-        <Text>Click here to {isOpen ? 'close' : 'open'} the menu</Text>
+        <Text>
+          Click here to
+          {isOpen ? 'close' : 'open'}
+          the menu
+        </Text>
       </Pressable>
       <Collapible collapsed={!isOpen} duration={180}>
         <FlatList

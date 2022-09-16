@@ -6,8 +6,13 @@ export const BasicuseOpen = () => {
 
   return (
     <>
-      <h1>The count is {isOpen.toString().toUpperCase()}</h1>
-      <button onClick={toggleOpen}>toggle</button>
+      <h1>
+        The count is
+        {isOpen.toString().toUpperCase()}
+      </h1>
+      <button type="button" onClick={toggleOpen}>
+        toggle
+      </button>
     </>
   );
 };

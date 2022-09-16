@@ -20,30 +20,41 @@ export function Accordion({ elementList }: AccordionProps) {
     borderStyle,
   } = useTheme();
 
-  const Trigger = () => {
-    return (
+  const Trigger = () => (
+    <div
+      style={{
+        borderWidth,
+        borderColor,
+        borderStyle,
+        padding: spacing,
+        marginBottom: spacing,
+      }}
+      role="button"
+      tabIndex={0}
+      onClick={toggleOpen}
+      onKeyDown={toggleOpen}
+    >
       <div
-        style={{
-          borderWidth,
-          borderColor,
-          borderStyle,
-          padding: spacing,
-          marginBottom: spacing,
-        }}
+        role="button"
+        tabIndex={0}
         onClick={toggleOpen}
+        onKeyDown={toggleOpen}
       >
-        <div onClick={toggleOpen}>
-          Click here to {isOpen ? 'close' : 'open'} the menu
-        </div>
+        Click here to
+        {isOpen ? 'close' : 'open'}
+        the menu
       </div>
-    );
-  };
+    </div>
+  );
 
   const RenderItem = ({ item }: { item: Item }) => {
     const color = item.id === selectedId ? primaryColor : secondaryColor;
     return (
       <div
+        role="button"
+        tabIndex={0}
         key={item.id}
+        onKeyDown={() => setSelection(item.id)}
         onClick={() => setSelection(item.id)}
         style={{
           borderColor: color,

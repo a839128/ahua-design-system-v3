@@ -4,6 +4,6 @@ import { BasicAccordion } from './accordion.composition';
 
 it('should render with the correct text', () => {
   const { getByText } = render(<BasicAccordion />);
-  const rendered = getByText('hello world!');
+  const rendered = getByText('Click here to');
   expect(rendered).toBeTruthy();
 });
