@@ -1,22 +1,20 @@
 ---
-description: 'A Mobile component.'
-labels: ['label1', 'label2', 'label3']
+description: A Theme component.
+labels: ['theme', 'react native']
 ---
 
-import { Mobile } from './mobile';
+import { useTheme } from './mobile';
+import { View } from 'react-native';
 
-## React Native Component for rendering text
-
-A basic view that renders some text
+A Theme Provider and a hook that provides the design tokens for React Native.
 
 ### Component usage
-```js
-<Mobile text="hello from Mobile" />
-```
 
-### Using props to customize the text
+You can use useTheme hook inside the component:
 
-Modify the text to see it change live:
 ```js live
-<Mobile text="hello from Mobile" />
+() => {
+  const theme = useTheme();
+  return <View style={{ color: theme.primaryColor }}>Hello World</View>;
+};
 ```

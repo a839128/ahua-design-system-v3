@@ -1,2 +1,1 @@
-export { Web } from './web';
-export type { WebProps } from './web';
+export { useTheme, ThemeProvider } from './web';

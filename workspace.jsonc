@@ -39,6 +39,7 @@
     "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {
+        "@teambit/base-react.theme.theme-provider": "1.96.5",
         "@teambit/code.ui.object-formatter": "0.0.1",
         "@teambit/eslint-config-bit-react": "~0.0.367",
         "@teambit/harmony": "0.3.3",
@@ -52,7 +53,9 @@
         "eslint-plugin-jsx-a11y": "6.4.1",
         "eslint-plugin-mdx": "1.15.0",
         "eslint-plugin-react": "7.25.1",
-        "lodash.sample": "4.2.1"
+        "lodash.sample": "4.2.1",
+        "react-collapsible": "2.10.0",
+        "react-native-collapsible": "1.6.0"
       },
       "peerDependencies": {
         "@testing-library/react-native": "9.0.0",

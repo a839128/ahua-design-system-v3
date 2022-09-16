@@ -1,18 +1,33 @@
 ---
-description: A Web component.
+description: A Theme component.
+labels: ['theme', 'react']
 ---
 
-import { Web } from './web';
+import { useTheme, ThemeProvider } from './web';
+import { DemoHookComponent } from './web.composition';
 
-A component that does something special and renders text in a div.
+A Theme Provider and a hook that provides the design tokens for React.
 
 ### Component usage
-```js
-<Web>Hello world!</Web>
-```
 
-### Render hello world!
+You can use useTheme hook inside the component:
 
 ```js live
-<Web>Hello world!</Web>
+() => {
+  const theme = useTheme();
+  return <div style={{ color: theme.primaryColor }}>Hello World</div>;
+};
+```
+
+Or wrap your component in the ThemeProvider and consume it as CSS vars:
+
+```js live
+() => {
+  const theme = useTheme();
+  return (
+    <ThemeProvider>
+      <div style={{ color: 'var(--primary-color)' }}>Hello World</div>
+    </ThemeProvider>
+  );
+};
 ```

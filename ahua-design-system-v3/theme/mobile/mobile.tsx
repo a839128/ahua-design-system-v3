@@ -1,21 +1,13 @@
-import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { createTheme } from '@teambit/base-react.theme.theme-provider';
 
-export type MobileProps = {
-  /**
-   * a text to be rendered in the component.
-   */
-  text: string
-};
+import { rNativeTokens } from '@ahua-design-system-v3/design-tokens.rnative-tokens';
+import type { RNativeTokensProps } from '@ahua-design-system-v3/design-tokens.rnative-tokens';
 
-export function Mobile({ text }: MobileProps) {
-  return (
-    <Text style={styles.text}>
-      {text}
-    </Text>
-  );
-}
-
-const styles = StyleSheet.create({
-  text: {},
+const theme = createTheme<RNativeTokensProps>({
+  theme: rNativeTokens,
+  withoutCssVars: true,
 });
+
+const { useTheme } = theme;
+
+export { useTheme };

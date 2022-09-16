@@ -1,9 +1,20 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import { BasicMobile } from './mobile.composition';
+import { BasicThemeComposed } from './mobile.composition';
 
-it('should render with the correct text', () => {
-  const { getByText } = render(<BasicMobile />);
-  const rendered = getByText('hello from Mobile');
-  expect(rendered).toBeTruthy();
+it('Should render a themed component that used the useTheme hook with proper style', () => {
+  const { getByText, getByTestId } = render(<BasicThemeComposed />);
+  const textElement = getByText('View styled with Hooks');
+  expect(textElement).toHaveStyle({
+    color: 'purple',
+    fontSize: 12,
+  });
+  const viewElement = getByTestId('view');
+  expect(viewElement).toHaveStyle({
+    borderColor: 'green',
+    backgroundColor: 'gray',
+    borderStyle: 'solid',
+    padding: 10,
+    borderWidth: 3,
+  });
 });

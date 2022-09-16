@@ -1,16 +1,12 @@
-import React, { ReactNode } from 'react';
+import { createTheme } from '@teambit/base-react.theme.theme-provider';
 
-export type WebProps = {
-  /**
-   * a node to be rendered in the special component.
-   */
-  children?: ReactNode;
-};
+import { reactTokens } from '@ahua-design-system-v3/design-tokens.react-tokens';
+import type { ReactTokensProps } from '@ahua-design-system-v3/design-tokens.react-tokens';
 
-export function Web({ children }: WebProps) {
-  return (
-    <div>
-      {children}
-    </div>
-  );
-}
+const theme = createTheme<ReactTokensProps>({
+  theme: reactTokens,
+});
+
+const { useTheme, ThemeProvider } = theme;
+
+export { useTheme, ThemeProvider };

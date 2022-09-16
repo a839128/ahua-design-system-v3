@@ -1596,6 +1596,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@teambit/base-react.theme.theme-provider@npm:1.96.5":
+  version: 1.96.5
+  resolution: "@teambit/base-react.theme.theme-provider@npm:1.96.5::__archiveUrl=https%3A%2F%2Fnode.bit.cloud%2F%40teambit%2Fbase-react.theme.theme-provider%2F-%2F%40teambit-base-react.theme.theme-provider-1.96.5.tgz"
+  dependencies:
+    core-js: ^3.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 225ebcf7b41b2b38c77b30b118a662b9af2fc8641a190c4374fede13ce877cebccd96876ed5f964a6f415d629c82ac26882656398eab1d073a270c84ab2914c8
+  languageName: node
+  linkType: hard
+
 "@teambit/code.ui.object-formatter@npm:0.0.1":
   version: 0.0.1
   resolution: "@teambit/code.ui.object-formatter@npm:0.0.1::__archiveUrl=https%3A%2F%2Fnode.bit.cloud%2F%40teambit%2Fcode.ui.object-formatter%2F-%2F%40teambit-code.ui.object-formatter-0.0.1.tgz"
@@ -1873,12 +1885,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-native@npm:0.66.9":
+  version: 0.66.9
+  resolution: "@types/react-native@npm:0.66.9::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Freact-native%2F-%2Freact-native-0.66.9.tgz"
+  dependencies:
+    "@types/react": "*"
+  checksum: fad569bd3ed9275e01cd1fed57e6a001b25cf3b2d1946b68b83d3dc77678ac914c8764e0a36b6e9dc2fa01dd9300f5687f50280fabc8fb76146eee73664929bc
+  languageName: node
+  linkType: hard
+
 "@types/react-native@npm:>=0.64.1 <0.65.0":
   version: 0.64.27
   resolution: "@types/react-native@npm:0.64.27::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Freact-native%2F-%2Freact-native-0.64.27.tgz"
   dependencies:
     "@types/react": ^17
   checksum: 6c34909808705d8201dcda5f76ea2496b52f978f383e07d92a8d7ba79c69c5dd2509385cc2999a1fa0d729f99da34d9f424dbc70249087fb5639a34377838ff8
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*":
+  version: 18.0.20
+  resolution: "@types/react@npm:18.0.20::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Freact%2F-%2Freact-18.0.20.tgz"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: f67f5b16efd89e237bf0e40d133218c398cf2a2f81166ce1e9fa32d0df6b869106740983396c51df9708a1b79b2a9d725eda1230cc3064c92d86d9ea6a4b714c
   languageName: node
   linkType: hard
 
@@ -2300,6 +2332,11 @@ __metadata:
 "accordion-1760ea@workspace:ahua-design-system-v3/api/accordion":
   version: 0.0.0-use.local
   resolution: "accordion-1760ea@workspace:ahua-design-system-v3/api/accordion"
+  dependencies:
+    "@types/react-native": 0.66.9
+  peerDependencies:
+    react: 17.0.2
+    react-native: 0.66.4
   languageName: unknown
   linkType: soft
 
@@ -7405,6 +7442,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-collapsible@npm:2.10.0":
+  version: 2.10.0
+  resolution: "react-collapsible@npm:2.10.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-collapsible%2F-%2Freact-collapsible-2.10.0.tgz"
+  peerDependencies:
+    react: ~15 || ~16 || ~17 || ~18
+    react-dom: ~15 || ~16 || ~17 || ~18
+  checksum: f7a883eb7c4aa91916378dfd4c98dc92a32bbdb4d6b8fad179e34ad1f2bbbab35446f5f6e126d699427bc67d1d70909c69f6be4ee744251bea4e17c7d10be2f3
+  languageName: node
+  linkType: hard
+
 "react-devtools-core@npm:^4.13.0":
   version: 4.25.0
   resolution: "react-devtools-core@npm:4.25.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-devtools-core%2F-%2Freact-devtools-core-4.25.0.tgz"
@@ -7468,6 +7515,16 @@ __metadata:
     jscodeshift: ^0.11.0
     nullthrows: ^1.1.1
   checksum: d550d6e985a0d564f0ac470b19c9a2e4e78ffc0f5769ba46992a4d10130928093e9c2ada7eda0ec8bd976db4ba4c21ef410280e979226f11844aa0215335cde5
+  languageName: node
+  linkType: hard
+
+"react-native-collapsible@npm:1.6.0":
+  version: 1.6.0
+  resolution: "react-native-collapsible@npm:1.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Freact-native-collapsible%2F-%2Freact-native-collapsible-1.6.0.tgz"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: a804072e05b2e4e41d54cb44bec4b63d27a88075e4e54359208c2f0e53cdbd8c5d6090e150ff88faa24b76b022b1ba51952cb60432e44d8114f9c73feb175db3
   languageName: node
   linkType: hard
 
@@ -7989,6 +8046,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@babel/runtime": 7.12.18
+    "@teambit/base-react.theme.theme-provider": 1.96.5
     "@teambit/code.ui.object-formatter": 0.0.1
     "@teambit/eslint-config-bit-react": ~0.0.367
     "@teambit/harmony": 0.3.3
@@ -8012,8 +8070,10 @@ __metadata:
     eslint-plugin-react: 7.25.1
     lodash.sample: 4.2.1
     react: 17.0.2
+    react-collapsible: 2.10.0
     react-dom: 17.0.2
     react-native: 0.66.4
+    react-native-collapsible: 1.6.0
     react-test-renderer: 17.0.2
   peerDependencies:
     "@testing-library/react-native": 9.0.0
